@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="estilos.css">
+    <title>Centro medico Nuñoa</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="Formulario">
+        <div class="form-group" id="Nombre">
+          <label for="exampleFormControlInput1">Nombre</label>
+          <input
+            type="name"
+            name="nombre"
+            class="form-control"
+            placeholder="Escribe aquí tu nombre"
+          />
+        </div>
+        <div class="form-group" id="Apellido">
+          <label for="exampleFormControlInput1">Apellido</label>
+          <input
+            type="name"
+            name="apellido"
+            class="form-control"
+            placeholder="Escribe aquí tu apellido"
+          />
+        </div>
+        <div class="form-group" id="Rut">
+          <label for="exampleFormControlInput1">Rut</label>
+          <input
+            type="name"
+            name="rut"
+            class="form-control"
+            placeholder="Escribe aquí tu numero Rut"
+          />
+        </div>
+        <div class="form-group"    id="Edad">
+            <label for="exampleFormControlInput1">Edad</label>
+            <input
+              type="name"
+              name="edad"
+              class="form-control"
+              placeholder="Escribe aquí tu numero Rut"
+            />
+          </div>
+        <div class="form-group"   id="Email">
+          <label for="exampleFormControlInput1">Correo electrónico</label>
+          <input
+            type="email"
+            name="correo"
+            class="form-control"
+            placeholder="nombre@ejemplo.com"
+          />
+        </div>
+        <div  id="fecha">
+          <label>Fecha</label> <br>
+          <input
+            type="date"
+            name="fecha"
+            value="2020-07-22"
+            min="2020-01-01"
+            max="2020-12-31"
+          />
+        </div>
+        <div class="form-group" id="Espacialidad">
+          <label for="exampleFormControlSelect1">Especialidad</label>
+          <select class="form-control" id="SelectionEsp" onchange="Medical();">
+            <option id ="MedicinaGeneral">Medicina general</option>
+            <option id ="Odontología">Odontología</option>
+            <option id ="Oftalmología">Oftalmología</option>
+          </select>
+        </div>
+        <div class="form-group" id="Hora">
+          <label for="exampleFormControlSelect1">Hora</label>
+          <select class="form-control" id="SelectionHora" onchange="Hour();">
+            <option value ="15HORAS">15 Horas</option>
+            <option value ="16HORAS">16 Horas</option>
+            <option value ="17HORAS">17 Horas</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-dark" id="Boton" >Reservar</button>
+      </form>
+    </div>
+
+    <div id="Mensaje"> </div>
+
+    <script src="script.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+
